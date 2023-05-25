@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
-
+import ComposableArchitecture
+            
 @main
 struct SwiftUI_TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostListView(
+                store: Store(
+                    initialState: PostListState(),
+                    reducer: PostListReducer,
+                    environment: PostListEnvironment(qiitaAPIClient: QiitaAPIClient())
+                )
+            )
         }
     }
 }

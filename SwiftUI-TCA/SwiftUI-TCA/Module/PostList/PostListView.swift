@@ -6,15 +6,24 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
+
 
 struct PostListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let store: Store<PostListState, PostListAction>
 
-struct PostListView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostListView()
-    }
+        var body: some View {
+            WithViewStore(self.store) { viewStore in
+
+                List {
+                    ForEach(viewStore.posts) { post in
+                        Text(post.title)
+                    }
+                }
+                
+                .onAppear {
+                    viewStore.send(.fetchPosts)
+                }
+            }
+        }
 }

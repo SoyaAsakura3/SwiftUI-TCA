@@ -21,6 +21,7 @@
 		61BCB6522A1F32DE00BC26DD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCB6512A1F32DE00BC26DD /* Post.swift */; };
 		61BCB6542A1F332B00BC26DD /* QiitaCustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCB6532A1F332B00BC26DD /* QiitaCustomError.swift */; };
 		61BCB6582A1F33E000BC26DD /* QiitaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCB6572A1F33E000BC26DD /* QiitaAPIClient.swift */; };
+		61BCB65B2A1F34B200BC26DD /* APIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCB65A2A1F34B200BC26DD /* APIConst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		61BCB6512A1F32DE00BC26DD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		61BCB6532A1F332B00BC26DD /* QiitaCustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaCustomError.swift; sourceTree = "<group>"; };
 		61BCB6572A1F33E000BC26DD /* QiitaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIClient.swift; sourceTree = "<group>"; };
+		61BCB65A2A1F34B200BC26DD /* APIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		61A5FE4A2A1B0BED00619E80 /* SwiftUI-TCA */ = {
 			isa = PBXGroup;
 			children = (
+				61BCB6592A1F344B00BC26DD /* Const */,
 				61BCB6502A1F32A900BC26DD /* Data */,
 				6194AF732A1F3021002696BC /* Module */,
 				61A5FE4B2A1B0BED00619E80 /* SwiftUI_TCAApp.swift */,
@@ -185,6 +188,14 @@
 				61BCB6512A1F32DE00BC26DD /* Post.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		61BCB6592A1F344B00BC26DD /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				61BCB65A2A1F34B200BC26DD /* APIConst.swift */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 			files = (
 				61BCB6542A1F332B00BC26DD /* QiitaCustomError.swift in Sources */,
 				6194AF782A1F309C002696BC /* PostListCore.swift in Sources */,
+				61BCB65B2A1F34B200BC26DD /* APIConst.swift in Sources */,
 				61A5FE4E2A1B0BED00619E80 /* ContentView.swift in Sources */,
 				6194AF762A1F3057002696BC /* PostListView.swift in Sources */,
 				61BCB6582A1F33E000BC26DD /* QiitaAPIClient.swift in Sources */,
