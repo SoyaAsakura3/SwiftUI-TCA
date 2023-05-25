@@ -18,6 +18,7 @@
 		61A5FE672A1B0BF000619E80 /* SwiftUI_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FE662A1B0BF000619E80 /* SwiftUI_TCAUITests.swift */; };
 		61A5FE692A1B0BF000619E80 /* SwiftUI_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FE682A1B0BF000619E80 /* SwiftUI_TCAUITestsLaunchTests.swift */; };
 		61BCB64F2A1F31C000BC26DD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 61BCB64E2A1F31C000BC26DD /* Alamofire */; };
+		61BCB6522A1F32DE00BC26DD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCB6512A1F32DE00BC26DD /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		61A5FE622A1B0BF000619E80 /* SwiftUI-TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-TCAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A5FE662A1B0BF000619E80 /* SwiftUI_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TCAUITests.swift; sourceTree = "<group>"; };
 		61A5FE682A1B0BF000619E80 /* SwiftUI_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61BCB6512A1F32DE00BC26DD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		6194AF732A1F3021002696BC /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				61BCB6502A1F32A900BC26DD /* Data */,
 				6194AF742A1F3031002696BC /* PostList */,
 			);
 			path = Module;
@@ -151,6 +154,14 @@
 				61A5FE682A1B0BF000619E80 /* SwiftUI_TCAUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-TCAUITests";
+			sourceTree = "<group>";
+		};
+		61BCB6502A1F32A900BC26DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				61BCB6512A1F32DE00BC26DD /* Post.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 				61A5FE4E2A1B0BED00619E80 /* ContentView.swift in Sources */,
 				6194AF762A1F3057002696BC /* PostListView.swift in Sources */,
 				61A5FE4C2A1B0BED00619E80 /* SwiftUI_TCAApp.swift in Sources */,
+				61BCB6522A1F32DE00BC26DD /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
