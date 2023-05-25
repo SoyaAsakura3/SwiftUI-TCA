@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Post: Codable, Identifiable, Equatable {
+    let id: String
+    let title: String
+}
+
