@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6194AF762A1F3057002696BC /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194AF752A1F3057002696BC /* PostListView.swift */; };
+		6194AF782A1F309C002696BC /* PostListCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194AF772A1F309C002696BC /* PostListCore.swift */; };
+		6194AF7B2A1F3192002696BC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 6194AF7A2A1F3192002696BC /* ComposableArchitecture */; };
 		61A5FE4C2A1B0BED00619E80 /* SwiftUI_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FE4B2A1B0BED00619E80 /* SwiftUI_TCAApp.swift */; };
 		61A5FE4E2A1B0BED00619E80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FE4D2A1B0BED00619E80 /* ContentView.swift */; };
 		61A5FE502A1B0BF000619E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A5FE4F2A1B0BF000619E80 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 		61A5FE5D2A1B0BF000619E80 /* SwiftUI_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FE5C2A1B0BF000619E80 /* SwiftUI_TCATests.swift */; };
 		61A5FE672A1B0BF000619E80 /* SwiftUI_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FE662A1B0BF000619E80 /* SwiftUI_TCAUITests.swift */; };
 		61A5FE692A1B0BF000619E80 /* SwiftUI_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FE682A1B0BF000619E80 /* SwiftUI_TCAUITestsLaunchTests.swift */; };
+		61BCB64F2A1F31C000BC26DD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 61BCB64E2A1F31C000BC26DD /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		6194AF752A1F3057002696BC /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		6194AF772A1F309C002696BC /* PostListCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCore.swift; sourceTree = "<group>"; };
 		61A5FE482A1B0BED00619E80 /* SwiftUI-TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-TCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A5FE4B2A1B0BED00619E80 /* SwiftUI_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TCAApp.swift; sourceTree = "<group>"; };
 		61A5FE4D2A1B0BED00619E80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6194AF7B2A1F3192002696BC /* ComposableArchitecture in Frameworks */,
+				61BCB64F2A1F31C000BC26DD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				6194AF752A1F3057002696BC /* PostListView.swift */,
+				6194AF772A1F309C002696BC /* PostListCore.swift */,
 			);
 			path = PostList;
 			sourceTree = "<group>";
@@ -162,6 +169,10 @@
 			dependencies = (
 			);
 			name = "SwiftUI-TCA";
+			packageProductDependencies = (
+				6194AF7A2A1F3192002696BC /* ComposableArchitecture */,
+				61BCB64E2A1F31C000BC26DD /* Alamofire */,
+			);
 			productName = "SwiftUI-TCA";
 			productReference = 61A5FE482A1B0BED00619E80 /* SwiftUI-TCA.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +245,10 @@
 				Base,
 			);
 			mainGroup = 61A5FE3F2A1B0BED00619E80;
+			packageReferences = (
+				6194AF792A1F3192002696BC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				61BCB64D2A1F31C000BC26DD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 61A5FE492A1B0BED00619E80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6194AF782A1F309C002696BC /* PostListCore.swift in Sources */,
 				61A5FE4E2A1B0BED00619E80 /* ContentView.swift in Sources */,
 				6194AF762A1F3057002696BC /* PostListView.swift in Sources */,
 				61A5FE4C2A1B0BED00619E80 /* SwiftUI_TCAApp.swift in Sources */,
@@ -597,6 +613,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6194AF792A1F3192002696BC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		61BCB64D2A1F31C000BC26DD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6194AF7A2A1F3192002696BC /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6194AF792A1F3192002696BC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		61BCB64E2A1F31C000BC26DD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61BCB64D2A1F31C000BC26DD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61A5FE402A1B0BED00619E80 /* Project object */;
 }
